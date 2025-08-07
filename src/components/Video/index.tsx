@@ -50,11 +50,12 @@ export default function Video() {
               </div>
             </div>
           </div>
-
-          <div className="absolute right-0 bottom-0 left-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat">
-            {/* <div className="absolute bottom-0 left-0 right-0 z-[-1] "> */}
-            {/* <img src="/images/video/shape.svg" alt="shape" className="w-full" /> */}
-          </div>
+          <div
+            className="absolute right-0 bottom-0 left-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat"
+            style={{
+              filter: "sepia(10) saturate(1) hue-rotate(70deg) brightness(1.1)",
+            }}
+          ></div>
         </div>
       </section>
 
@@ -66,4 +67,4 @@ export default function Video() {
       />
     </>
   );
-};
+}

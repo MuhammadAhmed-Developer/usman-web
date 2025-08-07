@@ -53,22 +53,22 @@ const Header = () => {
               <Link
                 href="/"
                 className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
+                  sticky ? "py-3 lg:py-3" : "py-4"
                 } `}
               >
                 <Image
-                  src="/images/logo/logo-2.svg"
+                  src="/images/logo/digital-light.png"
                   alt="logo"
                   width={140}
-                  height={30}
-                  className="w-full dark:hidden"
+                  height={20}
+                  className="w-[100px] dark:hidden"
                 />
                 <Image
-                  src="/images/logo/logo.svg"
+                  src="/images/logo/digital-dark.png"
                   alt="logo"
                   width={140}
-                  height={30}
-                  className="hidden w-full dark:block"
+                  height={20}
+                  className="hidden w-[100px] dark:block"
                 />
               </Link>
             </div>
@@ -160,16 +160,10 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
-                  href="/signin"
-                  className="text-dark hidden px-7 py-3 text-base font-medium hover:opacity-70 md:block dark:text-white"
-                >
-                  Sign In
-                </Link>
-                <Link
-                  href="/signup"
+                  href="/contact"
                   className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 hidden rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 md:block md:px-9 lg:px-6 xl:px-9"
                 >
-                  Sign Up
+                  Contact Us
                 </Link>
                 <div>
                   <ThemeToggler />
